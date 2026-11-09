@@ -3,18 +3,19 @@
 # policy, and support documentation.
 
 name: Scorecard supply-chain security
-on:
-  # For Branch-Protection check. Only the default branch is supported. See
-  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection
-  branch_protection_rule:
-  # To guarantee Maintained check is occasionally updated. See
-  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
-  schedule:
-    - cron: '27 21 * * 2'
-  push:
-    branches: [ "v2-branch" ]
-
-# Declare default permissions as read only.
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   # For Branch-Protection check. Only the default branch is supported. See
+#   # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection
+#   branch_protection_rule:
+#   # To guarantee Maintained check is occasionally updated. See
+#   # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
+#   schedule:
+#     - cron: '27 21 * * 2'
+#   push:
+#     branches: [ "v2-branch" ]
+# 
+# # Declare default permissions as read only.
 permissions: read-all
 
 jobs:

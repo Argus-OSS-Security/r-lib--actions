@@ -1,17 +1,18 @@
-on:
-  workflow_dispatch:
-    inputs:
-      pak-version:
-        required: true
-        type: choice
-        options:
-        - 'stable'
-        - 'rc'
-        - 'devel'
-        - 'repo'
-        - 'none'
-        default: 'stable'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       pak-version:
+#         required: true
+#         type: choice
+#         options:
+#         - 'stable'
+#         - 'rc'
+#         - 'devel'
+#         - 'repo'
+#         - 'none'
+#         default: 'stable'
+# 
 name: R-devel test
 
 permissions: read-all

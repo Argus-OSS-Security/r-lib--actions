@@ -1,12 +1,13 @@
 name: ClusterFuzzLite continuous builds
-on:
-  push:
-    branches:
-      - v2-branch
-    paths:
-      - 'src/**'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - v2-branch
+#     paths:
+#       - 'src/**'
+#   workflow_dispatch:
+# 
 permissions: read-all
 jobs:
   Build:

@@ -2,20 +2,21 @@ name: Test setup-pandoc on all OSes
 
 permissions: read-all
 
-on:
-  push:
-    branches: [main, master, v2-branch]
-  pull_request:
-    branches: [main, master, v2-branch]
-  workflow_dispatch:
-    inputs:
-      version:
-        description: |
-          Pandoc version, may be "latest".
-        required: true
-        default: '3.1.11'
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main, master, v2-branch]
+#   pull_request:
+#     branches: [main, master, v2-branch]
+#   workflow_dispatch:
+#     inputs:
+#       version:
+#         description: |
+#           Pandoc version, may be "latest".
+#         required: true
+#         default: '3.1.11'
+#         type: string
+# 
 jobs:
   pandoc:
     runs-on: ${{ matrix.config.os }}

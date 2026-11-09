@@ -1,17 +1,18 @@
-on:
-  workflow_dispatch:
-    inputs:
-      inpos:
-        description: 'OS, e.g. macos-latest, windows-latest, ubuntu-latest'
-        required: true
-        default: 'ubuntu-latest'
-        type: string
-      inprversion:
-        description: 'R versions (comma separated)'
-        required: true
-        default: 'devel,next,release,latest,oldrel/1,4.0,3.6.x'
-        type: string
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       inpos:
+#         description: 'OS, e.g. macos-latest, windows-latest, ubuntu-latest'
+#         required: true
+#         default: 'ubuntu-latest'
+#         type: string
+#       inprversion:
+#         description: 'R versions (comma separated)'
+#         required: true
+#         default: 'devel,next,release,latest,oldrel/1,4.0,3.6.x'
+#         type: string
+# 
 name: setup-r test
 
 permissions: read-all

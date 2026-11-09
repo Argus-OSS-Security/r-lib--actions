@@ -4,11 +4,12 @@
 # NOTE: This workflow is overkill for most R packages and
 # check-standard.yaml is likely a better choice.
 # usethis::use_github_action("check-standard") will install it.
-on:
-  push:
-    branches: [main, master, v2-branch]
-  pull_request:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main, master, v2-branch]
+#   pull_request:
+# 
 name: R-CMD-check.yaml
 
 permissions: read-all

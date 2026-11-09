@@ -1,15 +1,16 @@
 name: ClusterFuzzLite PR fuzzing
-on:
-  pull_request:
-    paths:
-      - 'src/**'
-  push:
-    branches:
-      - v2-branch
-    paths:
-      - 'src/**'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - 'src/**'
+#   push:
+#     branches:
+#       - v2-branch
+#     paths:
+#       - 'src/**'
+#   workflow_dispatch:
+# 
 permissions: read-all
 jobs:
   PR:
